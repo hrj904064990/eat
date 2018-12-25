@@ -1,0 +1,150 @@
+<!--index.wxml-->
+<view class='{{body}}'>
+    <view>
+    <!-- 搜索栏 -->
+    <view class="navora">
+      <view  class="addre">
+        <image src="{{search.src}}"></image>
+      <text>{{search.addre}}</text>
+      </view>
+    </view>
+    <view class='addre_bottom'>
+      <button class="searb">{{search.sou}}</button>
+    </view>
+    <!-- 轮播图 -->
+    <view class='lunbotu'>
+      <swiper autoplay='true' indicator-dots="true" interval='3000'indicator-active-color="#fdae05" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="*this" >
+          <swiper-item >
+            <image src="{{item}}" class="slide-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!-- 中间内容 -->
+    <view class="content">
+        <!-- 会员订购 -->
+        <view wx:for="{{account}}" wx:key="*this">
+          <view class="acount">
+            <image src="{{item.src}}"></image>
+            <text class="super">{{item.supera}}</text>
+            <text class="redp">{{item.rebp}}</text>
+            <navigator class="atonce" url='../account/account'><text>{{item.atonce}}</text><view></view></navigator>
+          </view>
+        </view>
+        <!-- 抢购 -->
+        <view class="activity">
+          <view class="act_cont" wx:for="{{activi}}" wx:key="*this">
+            <text class="quality">{{item.text1}}</text>
+            <text class="good">{{item.text2}}</text>
+            <navigator class="navi" url='../meal/meal' ><text>{{item.text3}}</text></navigator>
+            <image src='{{item.src}}' ></image>
+          </view>
+          <view class="act_cont" wx:for="{{acti}}" wx:key="*this">
+            <text class="limit">{{item.text1}}</text>
+            <text class="food">{{item.text2}}</text>
+            <navigator class="navi" url='' >
+              <text class="num">{{item.text3}}</text> {{item.text4}}
+            </navigator>
+            <image src='{{item.src}}' ></image>
+          </view>
+        </view>
+        <!-- 商家列表 -->
+        <!-- 推荐商家 -->
+        <view>
+          <view class="shoplist-title"> 
+            <view class="line"></view> 
+            <text class="stext">推荐商家</text>
+            <view class="line"></view>
+          </view>
+        </view>
+        <!-- 推荐商家导航条 -->
+        <view class="posi">
+          <view class="navstore">
+            <view class="sort">
+              <text bindtap='showMask'> {{sort.sortway}}</text>
+              <image src="{{sort.src}}" class="downl"></image>
+            </view>
+            <view class="distance"><text> {{sort.text2}}</text></view>
+            <view class="union"><text> {{sort.text3}}</text></view>
+            <view class="screen">
+              <text>{{sort.text4}}</text>
+              <image src="{{sort.src1}}" class="screenimg"></image>
+            </view>
+          </view>
+        </view>
+        
+        <!-- 商家列 -->
+        <view class='shopList'>
+          <!-- 商店 -->
+          <view class="shop" wx:for="{{store}}" wx:key="*this">
+            <!-- 左边 -->
+            <view class="shopleft">
+              <image src="{{item.blogo}}"></image>
+            </view>
+            <!-- 右边 -->
+            <navigator></navigator>
+            <view class="shopr">
+              <navigator class='shoptitle' url='../goods/goods'>
+                <text class="pinpai">品牌</text>
+                <text class="fontB hidd">{{item.bstorename}}</text>
+                <text class="more">{{item.moree}}</text>
+              </navigator>
+              <view class="sale">
+                <image src="../../images/start.png" class="star marg"></image>
+                <text class="fontA sizeA marg">{{item.bevaluate}}</text>
+                <text class="fontA sizeA">月售{{item.bmonthlysale}}单</text>
+              </view>
+              <view class="send">
+                <view>
+                  <text class="fontA sizeA margi">￥{{item.minsendmoney}}起送</text>
+                  <text class="fontA sizeA margi">|</text>
+                  <text class="fontA sizeA">配送费 {{item.distributionfee ==0 ? '免配送费':'￥'+item.distributionfee}}</text>
+                </view>
+                <view class="send_right">
+                  <text class="fontC sizeA margi">{{item.distance}}km</text>
+                  <text class="fontC sizeA margi"> | </text>
+                  <text class="fontC sizeA">{{item.sendtime}}分钟</text>
+                </view>
+              </view>
+              <view class="mart">
+                <text class="fontA sizeA bord">{{item.blabel}}</text>
+              </view>
+              <view class='disc {{item.discCss}}'>
+                <view class="send" wx:for='{{item.discountArr}}' wx:for-item='discount' wx:key='*this'>
+                  <text class="{{discount.proffebj}} sizeB marg">{{discount.profferlabel}}</text>
+                  <text class="fontA sizeA hidd">{{discount.proffername}}</text>
+                </view>
+              </view>
+            </view>
+            <view id='{{index}}' class="fontC sizeA send_active" bindtap='showOrHiddenHuod'>{{item.huod}}个活动</view>
+          </view>
+        </view>       
+    </view>
+    
+  </view>
+  <view class='mengb' hidden='{{mengbshow}}' bindtap='hiddenmask'>
+    <view class="posi posi_mask">
+          <view class="navstore">
+            <view class="sort">
+              <text> {{sort.sortway}}</text>
+                <image src="{{sort.src}}" class="downl"></image>
+            </view>
+            <view class="distance"><text> {{sort.text2}}</text></view>
+            <view class="union"><text> {{sort.text3}}</text></view>
+            <view class="screen">
+              <text>{{sort.text4}}</text>
+              <image src="{{sort.src1}}" class="screenimg"></image>
+            </view>
+          </view>
+          <view class="sort_more">
+            <view>
+              <view id='{{index}}' class="sortF" wx:for='{{sortList}}' wx:key='*this' bindtap='selectSort'>
+                {{item.name}}
+              </view>
+            </view>
+          </view>
+        </view>
+  </view>
+</view>
+

@@ -1,0 +1,55 @@
+<view class='body'>
+  <include src="../common/common_header"></include>
+  <!-- 广告 -->
+  <view class='advert'>
+    <image src='{{advertimg}}'></image>
+  </view>
+  <!-- 金币商城 -->
+  <view class='goldstore'>
+    <view class='goldstore_left'>
+      <view>
+        <navigator url='../gold/gold'>
+          <text>{{goldstoreleft.goldstoretitle}}</text>
+          <text>{{goldstoreleft.goldstorecontent}}</text>
+        </navigator>
+        <image src='{{goldstoreleft.goldstoreimg}}'></image>   
+      </view>
+    </view>
+    <view class='goldstore_right'>
+      <view wx:for="{{goldstoreright}}" wx:key='*this'>
+        <navigator>
+          <text>{{item.goldstoretitle}}</text>
+          <text>{{item.goldstorecontent}}</text>
+        </navigator>
+        <image src='{{item.goldstoreimg}}'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 限时好礼 -->
+  <view class='goodmanners'>
+    <view class='goodmanners_top'>
+        <text class='goodmanners_top_left'>—·</text>
+        <text class='goodmanners_top_mid'>{{goodmannerstop}}</text>
+        <text class='goodmanners_top_right'>·—</text>
+    </view>
+    <view class='goodmanners_content'>
+      <text>{{goodmannerscontent}}</text>
+    </view>
+    <view class='goodmanners_bottom'>
+      <view wx:for='{{goodmanners}}' wx:key='*this'>
+        <text>{{item.goodmannerstitle}}</text>
+        <view>
+          <image src='{{item.goodmannersimg}}'></image>
+        </view>
+        <navigator>{{item.goodmannersname}}</navigator>
+        <view>
+          <text>{{item.originalprice}}金币</text>
+          <text>￥{{item.reprice}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='goodmanners_more'>
+        查看更多
+    </view>
+  </view>
+</view>

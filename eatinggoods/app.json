@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/userinfo/userinfo",
+    "pages/gold/gold",
+    "pages/address/address",
+    "pages/goods/goods",
+    "pages/my_order/my_order",
+    "pages/account/account",
+    "pages/meal/meal",
+    "pages/order/order",
+    "pages/find/find",
+    "pages/me/me",
+    "pages/shopping/shopping",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ef690e",
+    "navigationBarTitleText": "吃货",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#666",
+    "selectedColor": "#ef690e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/index.png",
+        "selectedIconPath": "./images/index_click.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "./images/find.png",
+        "selectedIconPath": "./images/find_click.png"
+      },
+      {
+        "pagePath": "pages/my_order/my_order",
+        "text": "订单",
+        "iconPath": "./images/order.png",
+        "selectedIconPath": "./images/order_click.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "./images/me.png",
+        "selectedIconPath": "./images/me_click.png"
+      }
+    ]
+  }
+}

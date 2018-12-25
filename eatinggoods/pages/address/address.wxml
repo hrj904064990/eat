@@ -1,0 +1,39 @@
+<include src="../common/common_header"></include>
+<view class='address'>
+  <view id='{{index}}' wx:for='{{addressArr}}' wx:key='{{item.sid}}' bindtap='selectAddress'>
+    <view class='address_top'>
+      <text>{{item.sname}}</text>
+      <text>先生</text>
+      <text>{{item.sphone}}</text>
+    </view>
+    <view class='address_bottom'>
+      <text>{{item.saddress}}</text>
+      <view class='address_icon'>
+        <image id='{{index}}' src='../../images/edit.png' bindtap='editAddress'></image>
+        <image id='{{index}}' src='../../images/x.png' bindtap='removeAddress'></image>
+      </view>
+    </view>
+    <view class='icon' hidden='{{item.showIcon}}'>
+      <icon type='success'></icon>
+    </view>
+  </view>
+</view>
+<view class='editAddress' hidden='{{hiddenEdit}}'>
+   <view class='editList'>
+    <view class='editList_top'>
+      <view bindtap='backEdit'></view>
+      <text>修改地址</text>
+    </view>
+     <view>
+      <text>联系人：</text><input value='{{editObj.sname}}'></input>
+    </view>
+    <view>
+      <text>手机号：</text><input value='{{editObj.sphone}}'></input>
+    </view>
+    <view>
+      <text>配送地址:</text>
+    </view>
+    <textarea value='{{editObj.saddress}}'></textarea>
+    <button >修改</button>
+   </view>
+</view>

@@ -1,0 +1,110 @@
+<view class='{{maskscroll}}'>
+  <include src="../common/common_header"></include>
+  <!-- 订单信息 -->
+  <view class='order_msg'>
+    <view class='order_msg_top'>
+      <view>
+        <text>订单配送至</text>
+        <text>{{addressObj.slabel}}</text>
+      </view>
+      <view><text>{{addressObj.saddress}}</text></view>
+    <view>
+      <text>{{addressObj.sname}}</text>
+      <text>(先生)</text>
+      <text>{{addressObj.sphone}}</text>
+    </view>
+    <navigator url='../address/address'></navigator> 
+    </view>
+    <view class='order_msg_bottom'>
+      <view>
+        <view bindtap='setSendTime'>
+          <text>送达时间</text>
+          <text class='send'>尽快送达({{sendDate}}送达)</text>
+          <view></view>
+        </view>
+        <view>
+          <text>支付方式</text>
+          <text class='pay'>在线支付</text>
+          <view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 订单列表 -->
+  <view class='orderlist'>
+    <view class='orderlist_top'>
+      <text>喜鹅正宗厚街烧鹅濑粉</text>
+      <text></text>
+    </view>
+    <view class='orderlist_bottom'>
+      <view class='orderlist_content'>
+        <view class='goods' wx:for='{{orderlist}}' wx:key="{{item.goodsId}}">
+          <image src='{{item.goodsimg}}'></image>
+          <view>
+            <text>{{item.goodstitle}}</text>
+            <text>x{{item.goodscount}}</text>
+          </view>
+          <view>
+            <text>￥{{item.goodsreprice}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='favourable' hidden='{{show}}'>
+        <text>餐盒费</text>
+        <view>
+          <text>￥{{boxfee}}</text>
+        </view>
+      </view>
+      <view class='favourable' hidden='{{show}}'>
+        <text>配送费</text>
+        <view>
+          <text>￥{{distributionfee}}</text>
+        </view>
+      </view>
+      <view class='pay'>
+        <view>
+          优惠<text>{{discount}}</text>元
+        </view>
+        <view>
+          <text>合计：</text>
+          <text>￥{{paymoney}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 订单优惠 -->
+  <view class='promotions'>
+    <text>成为超级会员，本单减5元</text>
+    <text>每月都送你20元无门槛红包</text>
+    <icon type='success' color='{{icolor}}' size='20' bindtap='decrease'></icon>
+  </view>
+  <!-- 脚部导航条 -->
+  <view class='nav'>
+    <view>
+      <text>￥{{newpaymoney}}</text>
+      <text>| 已优惠￥{{newdiscount}}</text>
+    </view>
+    <view bindtap='paymoney'>
+      <navigator>去支付</navigator>
+    </view>
+  </view>
+  <!-- 蒙版 -->
+  <view class='mask' hidden='{{showmask}}' bindtap='hiddenMask'>
+    <view class='{{sendtimeStats}}'>
+      <view class='sendtime_top'>
+        <text>选择送达时间</text>
+      </view>
+       <view class='sendtime_bottom'>
+        <view class='sendtime_bottom_left'>
+          <text>今日（周五）</text>
+        </view>
+        <view class='sendtime_bottom_rightt'>
+          <view id='{{index}}' wx:for='{{dateObj.dateArr}}' bindtap='selectDate' wx:key='*this'>
+            <text>{{index == 0?'尽快送达('+item+'送达)':item}}</text>
+            <text>（{{distributionfee}}元配送费）</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

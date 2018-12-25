@@ -1,0 +1,59 @@
+<view class='bj'>
+  <include src="../common/common_header"></include>
+  <!-- 登录信息 -->
+  <view class='login'>
+    <view class='login_left'>
+      <image src='{{loginbj}}'></image>
+    </view>
+    <view class='login_right'>
+      <text>{{user.username}}</text>
+      <view class='login_phone'>
+        <image src='{{phonelogo}}'></image>
+        <text>{{user.uphone}}</text>
+      </view>
+    </view>
+    <view class='login_detailed'>
+      <navigator url='../userinfo/userinfo'></navigator>
+    </view>
+  </view>
+  <!-- 我的财产 -->
+  <view class='property'>
+    <view>
+      <navigator>
+        <view class='mymoney'>
+          <text>{{property.money}}</text>
+          <text>{{property.moneyunit}}</text>
+        </view>
+        <view>{{property.moneycol}}</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator>
+        <view class='mymoney'>
+          <text>{{property.gold}}</text>
+          <text>{{property.goldunit}}</text>
+        </view>
+        <view>{{property.goldcol}}</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator>
+        <view class='mymoney'>
+          <text>{{property.redenvelopes}}</text>
+          <text>{{property.redenvelopesunit}}</text>
+        </view>
+        <view>{{property.redenvelopescol}}</view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 我的地址 -->
+  <navigator class='address' wx:for="{{initpage}}" wx:key='this' url='{{item.href}}'>
+    <view class='address_left'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='address_right'>
+      <text>{{item.col}}</text>
+      <image src='../../images/r_grey.png'></image>
+    </view> 
+  </navigator>
+</view>

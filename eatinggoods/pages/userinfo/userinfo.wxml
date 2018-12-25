@@ -1,0 +1,34 @@
+<view class="bg">
+  <include src="../common/common_header"></include>
+  <view class="modify-form">
+      <form bindsubmit="formSubmit">
+          <view class="label-list label-lists">
+              <view class="label">头像</view>
+              <image src="{{images}}" bindtap="uploadFn"></image>
+          </view>
+
+          <view class="label-list">
+              <view class="label">用户名</view>
+              <input placeholder="d47a125c81c"  placeholder-class="place" name="name" value="{{name}}"/>
+          </view>
+          <view class="labelnum">账号绑定</view> 
+
+          <view class="label-list">
+              <image class="img" src="/images/phone.png"></image>
+              <view class="phone">手机</view>
+              <input placeholder="183****3020"  placeholder-class="place" name="name" value="{{name}}"/>
+          </view>
+          <view class="labelnum">安全设置</view>
+
+          <view class="label-list">
+              <view class="label">登录密码</view>
+              <view class="xg">修改</view>
+          </view> 
+
+          
+          <button form-type='submit' class="submit">退出登录</button>
+      </form>
+  </view>
+</view>
+
+

@@ -1,0 +1,49 @@
+.common_header{
+  width:100vw;
+	display:flex;
+	padding:0 0 0 0;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+}
+.common_header>view{
+	width:100vw;
+	height:40rpx;
+	background-color:#f7851a;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative;
+	margin:0 0 0 0;
+  padding: 20rpx 0;
+}
+.common_header>view>view{
+	color:#fff;
+	font-size:4.5vw;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	justify-content:center;
+	margin:0 0 0 0;
+}
+.common_header>view>view>text{
+	display:flex;
+	display:-webkit-flex;
+}
+.common_header>view>navigator{
+  width:2.8vw;
+  height:2.8vw;
+  display:block;
+  border-left:2px solid #fff;
+  border-top:2px solid #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 20;
+  left: 5vw;
+}
+.scrollOff{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

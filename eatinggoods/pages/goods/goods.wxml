@@ -1,0 +1,255 @@
+<image src='{{bbj}}' id='bbj'></image>
+<image src='{{blogo}}' id='blogo'></image>
+<view id='bstorename' bindtap=''>
+  {{bstorename}}
+  <text bindtap='showmask' class='showmask'></text>
+  <view class='showmask'>
+    <image src='../../images/jt.png'></image>
+  </view>
+
+</view>
+<!-- ==========这里是满减============= -->
+<view id='sele'>评价:{{bevaluate}} 月售:{{bmonthlysale}}单 {{sendname}}约{{sendtime}}分钟</view>
+<view class='off'>
+  <text class='offtit'>满减</text>
+  <text class='offcon'>{{discountcontent}}</text>
+  <text class='offmore' bindtap='showoff'>6个优惠</text>
+  <view class='gong'>公告：欢迎光临，用餐高峰期请提前下单，谢谢。</view>
+</view>
+<!--==========这里是选择的地方========= -->
+
+<view class="swiper-tab alllist">
+  <view class="navlist swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">点餐</view>
+  <view class="navlist swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">评价</view>
+  <view class="navlist swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">商家</view>
+</view>
+
+
+<swiper id='content' current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <!--======================这里是第一页哦================== -->
+  <swiper-item touchstart='takeitup'>
+    <image src='{{businessbanner}}' class='banner'></image>
+    <view id='all_goods'>
+      <view class='leftlist'>
+        <view wx:for='{{tname}}' class=''>{{item}}</view>
+      </view>
+      <view class='rightlist'>
+        <view wx:for='{{tname}}' class=''>
+          {{item}}
+          <view class='goods' wx:for='{{ones}}' wx:key='{{item.id}}' bindtap='onesshow'>
+            <view class='goodsimg'>
+              <image src='{{item.goodsimg}}'></image>
+            </view>
+            <view class='goodscon'>
+              <view class='goodsname'>{{item.goodstitle}}</view>
+              <view class='goodsshow'>{{item.goodsintroduce}}</view>
+              <view class='goodsshow'>
+                <text>月售{{item.goodsmonthlysale}}份</text>
+                <text>好评率{{goodspraise}}%</text>
+              </view>
+              <view class='goodsoff'>{{item.goodsdiscount}}折</view>
+              <view class='goodssell'>
+                <text class='nowones'>￥{{item.nowprice}}</text>
+                <text class='del'>￥{{item.goodsoriginalprice}}</text>
+              </view>
+            </view>
+            <view class='caozuo'>
+              <image src='../../images/jian.png' bindtap='jian' data-variable="{{item}}" wx:if='{{item.jianshow}}' class='jian_btn'></image>
+              <text wx:if='{{item.fenshow}}'>{{item.fen}}</text>
+              <image src='../../images/and.png' bindtap='jia' data-variable="{{item}}" class='jia_btn'></image>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </swiper-item>
+  <!--======================这里是第二页哦================== -->
+  <swiper-item id='pg2'>
+    <view class='pingfen2'>
+      <view class='pfs'>
+        <view>商家评分</view>
+        <view>4.6</view>
+      </view>
+      <view>
+        <view>味道</view>
+        <view>4.6</view>
+      </view>
+      <view>
+        <view>包装</view>
+        <view>4.6</view>
+      </view>
+      <view>
+        <view>配送</view>
+        <view>4.6</view>
+      </view>
+    </view>
+    <view class='fenlie'>
+      <view class='good pick'>全部726</view>
+      <view class='good'>满意675</view>
+      <view class='bad'>不满意21</view>
+      <view class='good'>有图85</view>
+      <view class='good'>味道好53</view>
+      <view class='bad'>味道不好16</view>
+    </view>
+    <view class=' fenlietitle'>
+      <icon type='success' size='10'></icon>
+      <text> 只看有内容的评价</text>
+    </view>
+    <view id='secondpage'>
+      <view class='pjcon'>
+        <view>
+          <image src='../../images/t.png' class='tou'></image>
+          <view class='pingfen'>
+            <view>用户：1******4</view>
+            <view>9.3分</view>
+            <view class='pfdate'>2018.12.16</view>
+          </view>
+          <view class='shophui'>商家回复：亲爱的顾客，感谢您选择品尝本店的美食，谢谢您认可我们的口味和服务，我们会继续努力，为您提供更好的服务。祝您生活愉快。</view>
+          <view class='shophui'>
+            <image src='../../images/1.jpg'></image>
+            <view>山药排骨汤套餐-菜脯鸡蛋</view>
+          </view>
+
+        </view>
+
+      </view>
+      <view class='pjcon'>
+        <view>
+          <image src='../../images/t.png' class='tou'></image>
+          <view class='pingfen'>
+            <view>用户：1******4</view>
+            <view>9.3分</view>
+            <view class='pfdate'>2018.12.16</view>
+          </view>
+          <view class='shophui'>商家回复：亲爱的顾客，感谢您选择品尝本店的美食，谢谢您认可我们的口味和服务，我们会继续努力，为您提供更好的服务。祝您生活愉快。</view>
+          <view class='shophui'>
+            <image src='../../images/1.jpg'></image>
+            <view>山药排骨汤套餐-菜脯鸡蛋</view>
+          </view>
+
+        </view>
+
+      </view>
+      <view class='pjcon'>
+        <view>
+          <image src='../../images/t.png' class='tou'></image>
+          <view class='pingfen'>
+            <view>用户：1******4</view>
+            <view>9.3分</view>
+            <view class='pfdate'>2018.12.16</view>
+          </view>
+          <view class='shophui'>商家回复：亲爱的顾客，感谢您选择品尝本店的美食，谢谢您认可我们的口味和服务，我们会继续努力，为您提供更好的服务。祝您生活愉快。</view>
+          <view class='shophui'>
+            <image src='../../images/1.jpg'></image>
+            <view>山药排骨汤套餐-菜脯鸡蛋</view>
+          </view>
+
+        </view>
+
+      </view>
+    </view>
+  </swiper-item>
+  <!--======================这里是第三页哦================== -->
+  <swiper-item class='shopcon'>
+    <view id='threepage'>
+      <view>
+        <view id='shophead'>配送信息</view>
+        <view>由{{sendname}}提供配送，约{{sendtime}}分钟，距离{{distance}} </view>
+        <view>配送费{{distributionfee}}</view>
+      </view>
+      <view>
+        <view id='shophead'>活动与服务</view>
+        <view>由{{sendname}}提供配送，约{{sendtime}}分钟，距离{{distance}} </view>
+        <view>配送费{{distributionfee}}</view>
+      </view>
+      <view>
+        <view id='shophead'>商家实景</view>
+        <view>由{{sendname}}提供配送，约{{sendtime}}分钟，距离{{distance}} </view>
+        <view>配送费{{distributionfee}}</view>
+      </view>
+      <view>
+        <view id='shophead'>商家信息</view>
+        <view>由{{sendname}}提供配送，约{{sendtime}}分钟，距离{{distance}} </view>
+        <view>配送费{{distributionfee}}</view>
+      </view>
+      <view>
+        <view id='shophead'>营业资质</view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
+<!--========================这里是底部===================== -->
+<view id='footer'>
+  <view class='footer_off'>已减了64元</view>
+  <!-- 购物车内容展示 -->
+  <view id='{{sccshow}}'>
+    <view id='scc'>
+      <text class='scc1'>已选商品</text>
+      <text class='scc2' bindtap='clearsc'>清空</text>
+    </view>
+    <view wx:for='{{ones}}' wx:if='{{item.jianshow}}'>
+      <text>{{item.goodstitle}}</text>
+      <text>{{item.goodsoriginalprice}}</text>
+      <text>{{item.nowprice}}</text>
+      <view class='caozuo'>
+              <image src='../../images/jian.png' bindtap='jian' data-variable="{{item}}" wx:if='{{item.jianshow}}' class='jian_btn'></image>
+              <text wx:if='{{item.fenshow}}'>{{item.fen}}</text>
+              <image src='../../images/and.png' bindtap='jia' data-variable="{{item}}" class='jia_btn'></image>
+            </view>
+    </view>
+  </view>
+  <!-- 统计条 -->
+  <view id='footer_bottom'>
+    <view id='{{shopcartimg}}' bindtap='showcart' bindtap='showscc'>
+      <image src='{{cart}}' mode='aspectFit' class='shopcart'></image>
+    </view>
+    <view class='jisuan'>
+      <view>{{nowpick}}</view>
+      <view>另需要运费1.5元</view>
+    </view>
+    <view class='{{payshow}}'>
+      <navigator url='../pay/pay'>{{omoney}}</navigator>
+    </view>
+  </view>
+</view>
+
+
+<!-- =========这里是请求============ -->
+
+
+
+<!-- =============这里是蒙版=========== -->
+<view id="mask" wx:if='{{show}}' bindtap='showdown' catchtouchmove='ture'></view>
+<view id='showxiang' wx:if='{{show1}}' catchtouchmove='ture'>
+  <text class='xiangtitle'>品牌</text>
+  <text class='xiangname'>{{bstorename}}</text>
+  <view class='allxn'>
+    <view class='xiangnode'>
+      <view>{{bevaluate}}</view>
+      <view>评分</view>
+    </view>
+    <view class='xiangnode'>
+      <view>{{bmonthlysale}}</view>
+      <view>月售</view>
+    </view>
+    <view class='xiangnode'>
+      <view>{{sendname}}</view>
+      <view>约{{sendtime}}分钟</view>
+    </view>
+    <view class='xiangnode'>
+      <view>{{distributionfee}}</view>
+      <view>配送费</view>
+    </view>
+    <view class='xiangnode'>
+      <view>{{distance}}</view>
+      <view>距离</view>
+    </view>
+  </view>
+  <view class='xianggao'>公告</view>
+  <view class='welcome'>欢迎光临，用餐高峰期请提前下单，谢谢。</view>
+</view>
+<!-- 单个商品展示 -->
+<!-- <view id='onesopen'>
+  123
+</view> -->

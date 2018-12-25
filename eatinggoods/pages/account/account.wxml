@@ -1,0 +1,182 @@
+<!--pages/account/account.wxml-->
+<view class="bdy">
+  <view class="head">
+    <image src="../../images/new_header_card.png"></image>
+    <view class="head_view poa">
+      <view>
+        <text class="packg">专享红包</text>
+        <image src="../../images/4.png"></image>
+        <text class="hv_text">下单奖励</text>
+      </view>
+      <view class="head_ve">
+        <text class="poa">免费领</text>
+        <text>加入即领20元红包</text>
+        <text>众多会员特权，平均每年可省785元</text>
+      </view>
+    </view>
+  </view>
+  <view class="special">
+    <view class="spe_tit">
+      <image src="../../images/1.png"></image>
+      <text>会员特价</text>
+      <image src="../../images/1.png"></image>
+      <text class="poa">特权说明</text>
+    </view>
+    <view class="spe_cont">
+      <view>
+        <image src="../../images/package.webp"></image>
+        <image src="../../images/jianglli.webp"></image>
+        <image src="../../images/phone.webp"></image>
+        <image src="../../images/disc.webp"></image>
+        <image src="../../images/gift.webp"></image>
+      </view>
+      <view>
+        <text>专享红包</text>
+        <text>奖励金</text>
+        <text>专属客服</text>
+        <text>专属折扣</text>
+        <text>金币特权</text>
+      </view>
+    </view>
+    
+  </view>
+  <view class="free">
+    <view class="view1"><text>每月免费领红包</text></view>
+    <view class="view2">
+      <text>会员期内每月可免费领取</text>
+      <text>4个</text>
+      <text>无门槛红包</text>
+    </view>
+    <view>
+      <view class="view3">
+        <view>
+          <image src="../../images/2.png"></image>
+          <view class="view3_view poa">
+            <text class="poa">￥</text>
+            <text class="poa">5</text>
+            <text>无门槛红包</text>
+          </view>
+        </view>
+        <view>
+          <image src="../../images/2.png"></image>
+          <view class="view3_view poa">
+            <text class="poa">￥</text>
+            <text class="poa">5</text>
+            <text>无门槛红包</text>
+          </view>
+        </view>
+      </view>
+      <view class="view3">
+        <view>
+          <image src="../../images/2.png"></image>
+          <view class="view3_view poa">
+            <text class="poa">￥</text>
+            <text class="poa">5</text>
+            <text>无门槛红包</text>
+          </view>
+        </view>
+        <view>
+          <image src="../../images/2.png"></image>
+          <view class="view3_view poa">
+            <text class="poa">￥</text>
+            <text class="poa">5</text>
+            <text>无门槛红包</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="view4">
+      <view class="view4_view">
+        <image src="../../images/3.png"></image>
+        <view class="four poa">
+          <view class="vf">
+            <text class="vf1t">￥</text>
+            <text class="vf2t">8</text>
+          </view>
+          <text class="viewt">无门槛红包</text>
+          <view class="vf2 poa">
+            <text>阿拉丁早点</text>
+          </view>
+        </view>
+      </view>
+      <view class="view4_view">
+        <image src="../../images/3.png"></image>
+        <view class="four poa">
+          <view class="vf">
+            <text class="vf1t">￥</text>
+            <text class="vf2t">7</text>
+          </view>
+          <text class="viewt">无门槛红包</text>
+          <view class="vf2 poa">
+            <text>金牌烧鹅(赤岗店)</text>
+          </view>
+        </view>
+      </view>
+      <view class="view4_view">
+        <image src="../../images/3.png"></image>
+        <view class="four poa">
+          <view class="vf">
+            <text class="vf1t">￥</text>
+            <text class="vf2t">8</text>
+          </view>
+          <text class="viewt">无门槛红包</text>
+          <view class="vf2 poa">
+            <text>YASO沙拉(客村店)</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bonus">
+    <view class="bonus_tit">
+      <text>下单返奖励金</text>
+    </view>
+    <view class="bt_cont">
+      <text>每完成1笔¥20订单即获1个奖励金，可兑换各类无门槛红包及专属奖励。</text>
+    </view>
+    <view class="bonus_cont">
+      <view class="bc_view">
+        <image src="../../images/3.png"></image>
+        <view class="b_view poa">
+          <view class="bv_view">
+            <text class="vf1t">￥</text>
+            <text class="vf2t">8</text>
+          </view>
+          <text class="viewt">无门槛红包</text>
+          <view class="vf2 poa">
+            <text>阿拉丁早点</text>
+          </view>
+        </view>
+      </view>
+      <view class="bc_view bleft">
+        <image src="../../images/3.png"></image>
+        <view class="b_view poa">
+          <view class="bv_view">
+            <text class="vf1t">￥</text>
+            <text class="vf2t">7</text>
+          </view>
+          <text class="viewt">无门槛红包</text>
+          <view class="vf2 poa">
+            <text>金牌烧鹅(赤岗店)</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="discoun">
+    <view class="bonus_tit"><text>专属折扣</text></view>
+    <view class="bt_cont"><text>购物享专属特价，万款特价菜等您选购。</text></view>
+    <view class="disim">
+      <image src="../../images/supe.webp" class="disimg"></image>
+    </view>
+  </view>
+  <view class="foot">
+    <view class="bc_view">
+      <image src="../../images/foot.png"></image>
+      <view class="foot_view poa">
+        <text>开通会员</text>
+        <text>>></text>
+      </view>
+    </view>
+  </view>
+</view>

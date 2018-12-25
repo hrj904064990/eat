@@ -1,0 +1,94 @@
+/* pages/my_order/my_order.wxss */
+.wrap{
+  background:rgb(238, 234, 234);
+}
+.main{
+   display: flex;
+  flex-flow: column;
+  margin: 7.5rpx 0 0 0;
+}
+.products{
+  display: flex;
+  flex-flow: column;
+  background: #fff;
+  padding:20rpx 15rpx;
+  margin:7.5rpx 15rpx 7.5rpx 15rpx;
+  position:relative;
+}
+.products_top{
+  width: 100%;
+  display: flex;
+  position:relative;
+  padding-bottom:20rpx;
+}
+.img{
+  width:100rpx;
+  height:100rpx;
+  margin: 0 15rpx;
+}
+.products_title{
+  display: flex;
+  top:0rpx;
+  left:20rpx;
+  font-size: 40rpx;
+  flex-flow: column;
+  padding: 0 15rpx;
+}
+.products_title>text{
+  width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 32rpx;
+  color: #666;
+}
+.odate{
+	font-size:26rpx;
+	color: #999;
+  margin: 15rpx 0 0 0;
+}
+.zhuangtai{
+  position:absolute;
+  top:20rpx;
+  right:20rpx;
+}
+.zhuangtai>navigator{
+  padding: 15rpx 15rpx;
+  font-size:30rpx;
+	color: #666;
+}
+.products_min{
+  display:flex;
+  padding:15rpx 0; 
+}
+.list{
+  width:50vw;
+  overflow:hidden;
+  margin-left:15vw;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:28rpx;
+  color: #666;
+}
+.list_price{
+    flex-basis: 40rpx;
+    font-size:28rpx;
+    margin-left:120rpx;
+    color: #666;
+    font-weight: 500;
+}
+.products-bottom{
+  display: flex;
+  flex-flow: row-reverse;
+}
+.products-bottom .cardbutton{
+  width:130rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  font-size: 23rpx;
+  color: #4e87bc;
+  border: 2rpx solid #2295ff;
+  background:#fff;
+  margin: 0 0 0 0;
+  padding:0 10rpx;
+}

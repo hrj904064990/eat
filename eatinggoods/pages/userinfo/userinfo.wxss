@@ -1,0 +1,86 @@
+/* pages/me/me.wxss */
+.bg{
+  background:#f3f1f1;
+  height:100vh;
+}
+.xx{
+  text-align: center;
+  height:80rpx;
+  background:#fdae05;
+  color:#ffffff;
+}
+.modify-form form{
+    display:block;
+    padding:0rpx;
+}
+.label-list {
+    display: flex;
+    height: 100rpx;
+    align-items: center;
+    background:#fff;
+    border-bottom: 1px solid #f3f1f1;
+
+}
+.label-lists{
+  padding: 10rpx 10rpx;
+}
+.label{
+  padding:20rpx 20rpx;
+}
+.place {
+    display: flex;
+    align-items: center;
+    font-size: 34rpx;
+}
+.label-list>.label {
+    color: #333;
+    font-size: 35rpx;
+}
+.phone{
+  color: #333;
+  font-size: 35rpx;
+}
+.label-list>input{
+    padding-left: 320rpx;
+    flex: 1;
+    color: rgb(238, 238, 238);
+    font-size: 36rpx;
+}
+.label-list>image {  
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 50%;
+    margin: 50rpx;
+}
+.label-lists {
+    justify-content: space-between;
+}
+.labelnum{
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+  color:#a19c9c;
+  padding: 20rpx;
+}
+.submit {
+  margin-top: 30rpx;
+  background-color:#fff ;
+  color: #f55a5a;
+  font-weight: 600;
+}
+.radio-group label{
+    padding-left: 30rpx;
+    font-size: 36rpx;  
+}
+.label-list>.img{
+  width:50rpx;
+  height:50rpx;
+  margin:20rpx;
+}
+.xg{
+  font-size: 30rpx;
+  color:rgb(74, 166, 228); 
+  margin: 0 0 0 430rpx;
+  font-weight: 600;
+}
+

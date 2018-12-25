@@ -1,0 +1,47 @@
+<include src="../common/common_header"></include>
+<view class='orderlist'>
+  <view class='orderlist_top'>
+    <text>喜鹅正宗厚街烧鹅濑粉</text>
+    <text></text>
+    <image src='../../images/laji.png' bindtap='removeAll'></image>
+  </view>
+  <view class='orderlist_bottom'>
+    <view class='orderlist_content'>
+      <view class='goods' wx:for='{{orderlist}}' wx:key="{{item.goodsId}}">
+        <image src='{{item.goodsimg}}'></image>
+        <view>
+          <text>{{item.goodstitle}}</text>
+          <text>x{{item.goodscount}}</text>
+        </view>
+        <view>
+          <image id='{{index}}' src='../../images/x.png' bindtap='removeGoods'></image>
+          <text>￥{{item.goodsreprice}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='favourable' hidden='{{show}}'>
+      <text>餐盒费</text>
+      <view>
+        <text>￥{{boxfee}}</text>
+      </view>
+    </view>
+    <view class='favourable' hidden='{{show}}'>
+      <text>配送费</text>
+      <view>
+        <text>￥{{distributionfee}}</text>
+      </view>
+    </view>
+    <view class='pay'>
+      <view>
+        优惠<text>{{discount}}</text>元
+      </view>
+      <view>
+        <text>合计：</text>
+        <text>￥{{paymoney}}</text>
+      </view>
+      <view>
+        <text>去结算</text>
+      </view>
+    </view>
+  </view>
+</view>

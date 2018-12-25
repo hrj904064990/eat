@@ -1,0 +1,120 @@
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class='entry_left pull-left' style="background:url('../../images/hongbao.png') no-repeat center;"></view>
+    <view class='entry_cen pull-left'>
+      <view class='cen_p1'>登录领取红包福利</view>
+      <view class='cen_p2'>千万现金红包等你来拿</view>
+    </view>
+      <view class="entry_right pull-right text-center">
+            <text href="#">登录</text>
+      </view>
+  </view>
+</view>
+  <view class="game">
+      <image class="image" src="../../images/gold_1.png" />
+    </view>
+
+   <view class="categoryList" >
+      <block wx:for="{{categoryList}}" wx:key="*this">
+      <swiper-item>
+      <block wx:for="{{item}}" wx:key="*this">
+        <view class="category-info">
+          <image src="{{item.src}}" 
+          class="category-image"></image>
+          <view class="category-text">{{item.name}}</view>
+        </view>
+      </block>
+      </swiper-item>
+      </block>
+  </view>
+
+  <view class="main_game" style='	background:url("../../images/main_bj.jpg");'>
+    <view class="main_game_title clearfix">
+        <view class="t1">规则</view>
+        <view class="t_con" style='background:url("../../images/logo22.png") no-repeat center;	background-size:200rpx 40rpx;'>
+        </view>
+      <view class="t2" style='background:url("../../images/game_1.png") no_repeat right center'>
+      我的战绩
+      </view>
+    </view>
+    <view class="game_conb" style='	background:url("../../images/main_game_1.png") no-repeat;background-size:100% 100%;' wx:for="{{lunbo}}" wx:key='*this'>
+         <view class="g1" style='background:url("../../images/main_game.png") no-repeat center;background-size:100% 100%;'>
+            <view style='	background:url("../../images/main_game_2.png") no-repeat 4rem .3rem;background-size:.6rem 50%;'>
+            本题胜方可瓜分<text>5000</text>元红包 </view>
+          </view>
+         <view class="g2">{{item.title}}</view>
+         <view class="g3 clearfix">
+             <view class="g_left">
+              <view class="d1">
+                <image src="{{item.img_num_1}}"></image>
+              </view>
+              <view class="d2">{{item.name_1}}</view>
+              <view class="d3">选TA</view>
+            </view>
+            <view class="g_cen" >
+              <view class="c1" style='background:url(../../images/main_pk.png) no-repeat;background-size:100% 100%;z-index:7;'></view>
+              <view class="c2" ></view>
+              <view class="c_pk" style='background:url(../../images/main_game_3.png) no-repeat;background-size:100% 100%;z-index:7;'></view>
+            </view>
+            <view class="g_right">
+              <view class="d1">
+                <image src="{{item.img_num_2}}"></image>
+              </view>
+              <view class="d2">{{item.name_2}}</view>
+              <view class="d3">选TA</view>
+            </view>
+          </view>
+            <view class="g4">
+            <view>明天
+              <text>0</text>
+              <text>6</text>:
+              <text>0</text>
+              <text>0</text>
+              开奖，投一次2金币
+            </view>
+          </view>
+        </view> 
+  </view>
+
+  <swiper class='luo' autoplay='true' interval='3000' indicator-active-color='red' indicator-color='white'>
+ <block wx:for="{{imgUrls}}" wx:key="*this" >
+    <swiper-item>
+      <image class='img1' src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+
+ <view class="main_con flex-wrp ">
+    <view class="c_left pull-left">
+        <image class='c_l' src="../../images/main_con_1.jpg" alt="" />
+    </view>
+    <view class="pull-left c_right">
+        <view class="right_1">
+            <image class='c_r1' src="../../images/main_con_2.jpg" alt="" />
+        </view>
+        <view class="right_2">
+            <image class='c_r2' src="../../images/main_con_3.jpg" alt="" />
+        </view>
+    </view>
+</view>
+
+ <view class="footer">
+    <view class="foot clearfix">
+        <view class="foot_title">大家都着说</view>
+        <view class='foot_content'>
+          <view  class="foot_con pull-left  " wx:for="{{foot_con}}" wx:key="*this">
+              <view class="top">
+                  <view class="t1">{{item.uearname}}</view>
+                  <view class="t2">{{item.money}}<text>{{item.gold}}</text></view>
+              </view>
+              <view class="down">
+                  <image src="{{item.img_num}}" alt="" />
+              </view>
+          </view>
+        </view>
+    </view>
+    <view class="kefu text-center" style="background:url('../../images/kefu.png') no-repeat center,rgba(255, 121, 33, 0.75);">
+       
+    </view>
+</view>
+

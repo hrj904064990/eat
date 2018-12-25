@@ -1,0 +1,23 @@
+<!--pages/my_order/my_order.wxml-->
+<view class="wrap">
+  <include src="../common/common_header"></include>
+  <view class="main" >
+    <view class="products" wx:for="{{part2}}" wx:key="{{this}}">
+      <view class="products_top" >
+        <image class="img" src="{{item.img}}" width="20" height="20"/>
+        <view class="products_title">
+           <text> {{item.oname}} </text>
+           <view class="odate">{{item.odate}}</view>
+        </view>       
+      </view>
+      <view class="products_min">
+        <view class="list">{{item. oId}}</view>
+        <view  class="list_price">{{item.omoney}}</view>
+      </view>
+      <view class="products-bottom">
+        <button  class="cardbutton">再来一单</button>
+      </view>
+      <view class="zhuangtai"><navigator url='../order/order'>{{item.ostate}}</navigator></view>
+    </view>
+  </view>
+</view>

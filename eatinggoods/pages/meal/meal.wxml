@@ -1,0 +1,50 @@
+<!--meal.wxml-->
+<view > 
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}"> 
+  <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">全部类别</view> 
+  <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">简餐便当</view> 
+  <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">传统美食</view> 
+  <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">西式套餐</view> 
+  <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">港粤风味</view> 
+  <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">日韩料理</view> 
+  </scroll-view> 
+  <view class='list'>
+    <block wx:for="{{mealList}}">
+      <view class='goodsList' current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+        <view class='shop'>
+              <view class="item-ans">
+                <view class="avatar"> 
+                  <image class="img" src="{{item.src}}"></image> 
+                </view> 
+                <view class="expertInfo"> 
+                  <text class="dp">{{item.dp}}</text>
+                  <text class="fei">{{item.fei}}</text>       
+                  <text class="pin">{{item.pin}}</text>
+                </view> 
+              </view> 
+
+            
+            <view class='goodsList_bottom {{item.goodsCss}}'>
+              <view wx:for="{{item.myList1}}">
+                <view class="item-eat"> 
+                  <view class="tup"> 
+                    <image class="img" src="{{item.src}}"></image> 
+                  </view> 
+                  <view class="expertInfo"> 
+                    <view class="name">{{item.name}}</view> 
+                    <view class="tag hidd">{{item.tag}}</view> 
+                    <view class='money_info'>
+                      <view class="moeny">{{item.moeny}}</view> 
+                      <text class="preferential">{{item.preferential}}</text>
+                      <image class="askBtn" src="{{item.src1}}"></image> 
+                    </view>
+                  </view> 
+                </view> 
+              </view>     
+            </view>
+        </view>
+            <button id='{{index}}' bindtap='showOrHidden'>展开更多套餐 2个</button>  
+        </view>
+    </block> 
+  </view>
+</view>

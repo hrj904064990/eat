@@ -1,0 +1,127 @@
+.orderlist{
+  display: flex;
+  flex-flow: column;
+}
+.orderlist_top{
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  padding:0 3vw;
+  color: #333;
+  border-bottom: 0.133333vw solid #e0e0e0;
+  position:relative;
+}
+.orderlist_top>text:nth-of-type(1){
+  font-size: 4vw;
+}
+.orderlist_top>text:nth-of-type(2){
+  width:2vw;
+  height:2vw;
+  border-left:2px solid #ccc;
+  border-top:2px solid #ccc;
+  transform: rotate(135deg);
+  margin:0 0 0 20rpx;
+}
+.orderlist_top>image{
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  right: 40rpx;
+}
+.goods{
+  padding:2.666667vw 3vw 2.666667vw 3vw;
+  display: flex;
+  flex-flow: row;
+  position:relative;
+  align-items: center;
+  border-bottom: 0.133333vw solid #e0e0e0;
+}
+.goods>image:nth-of-type(1){
+    width: 12vw;
+    height: 12vw;
+}
+.goods>view:nth-of-type(1){
+  width: 80vw;
+  display: flex;
+  flex-flow: column;
+  margin:0 0 0 30rpx;
+}
+.goods>view:nth-of-type(1)>text{
+  font-size: 3.5vw;
+}
+.goods>view:nth-of-type(2){
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  right: 30rpx;
+}
+.goods>view:nth-of-type(2)>image{
+  width:7vw;
+  height:7vw;
+  margin:0 0 0 40rpx;
+}
+.goods>view:nth-of-type(2)>text{
+    color: #ff6000;
+    font-weight: 700;
+    font-size: 4vw;
+}
+.favourable{
+  height: 12vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 4vw;
+  color: #333;
+  padding: 0 6vw 0 4vw;
+  border-bottom: 0.133333vw solid #e0e0e0;
+}
+.favourable>view{
+  position: absolute;
+  right:35rpx; 
+}
+.pay{
+  height: 10vw;
+  display: flex;
+  padding: 0 3vw 0 3vw;
+  color: #333;
+  border-bottom: 0.133333vw solid #e0e0e0;
+}
+.pay>view{
+  display: flex;
+  align-items: center;
+}
+.pay>view:nth-of-type(1){
+  width: 45%;
+  font-size: 30rpx;
+  color: #666;
+  padding:0 0 0 30rpx;
+}
+.pay>view:nth-of-type(1)>text{
+  color: #ff6000;
+  margin: 0 5rpx 0 5rpx;
+}
+.pay>view:nth-of-type(2){
+  width: 35%;
+  display: flex;
+  flex-flow: row;
+}
+.pay>view:nth-of-type(2)>text{
+  font-size: 30rpx;
+  color:#666;
+}
+.pay>view:nth-of-type(2)>text:nth-of-type(2){
+  color: #ff6000;
+}
+.pay>view:nth-of-type(3){
+  width:20%;
+  display: flex;
+  justify-content: center;
+  
+}
+.pay>view:nth-of-type(3)>text{
+  background:#29d96c;
+  font-size:24rpx;
+  font-weight: 700;
+  padding: 2vw 2vw;
+  color: #fff;
+}

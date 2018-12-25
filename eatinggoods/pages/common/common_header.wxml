@@ -1,0 +1,6 @@
+<view class='common_header'>
+  <view>
+			<!-- <navigator url='#'></navigator> -->
+			<view><text>{{h_title}}</text></view>
+		</view>
+</view>

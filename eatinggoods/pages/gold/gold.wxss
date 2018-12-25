@@ -1,0 +1,418 @@
+.flex-wrp{
+ display: flex; 
+}
+body{
+	background: #f6f6f6 !important;
+}
+.entry_left{
+	width:65rpx;
+	height:75rpx;
+	border-radius: 20%;
+  margin:25rpx 25rpx 25rpx 35rpx; 
+}
+.entry_cen{
+	padding-top:20rpx;
+  flex: 50%;
+}
+.cen_p1{
+	font-size:30rpx;
+	font-weight:bold;
+}
+.cen_p2{
+	font-size:25rpx;
+}
+.entry_right{
+  display: flex;
+  align-items: center;
+  margin:0 15rpx 0 0; 
+}
+.entry_right text{
+	width:3.05rem;
+	height:1.3rem;
+	line-height:1.3rem;
+	display:block;
+	font-size:.66rem;
+	background:#ff9d2a;
+	border-radius:2rem;
+	color:#fff;
+  text-align: center;
+}
+.game{
+  width:100%;
+  height:400rpx;
+}
+.image{
+   width:100%;
+   height: 100%;
+  background-size:150rpx;
+}
+.categoryList{
+  width: 100%;
+  height: 350rpx;
+  border-bottom:20rpx solid #f4f4f4; 
+}
+.category-info{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin-top: 20rpx;
+  height: 150rpx;
+  width: 25%;
+}
+.category-image{
+  width: 95rpx;
+  height: 95rpx;
+  border-radius: 50%;
+}
+.category-text{
+  font-size: 25rpx;
+  width: 100%;
+  line-height: 30rpx
+}
+.t12{
+ width: 10%;
+ font-size: 30rpx;
+ line-height: 63rpx;
+ color: gray;
+}
+.t1{
+  width: 100%;
+ font-size: 26rpx;
+ color: gray;
+}
+.t_con{
+  flex: 50%;
+	width:50%;
+	height:70rpx;
+	background-size:50rpx;
+}
+.magin-game{
+  width: 100%;
+  height: 20rpx;
+  overflow: hidden;
+}
+.tex{
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+.main_game_title{
+  overflow: hidden;
+  height: 80rpx;
+}
+.img1{
+  max-height: 100%;
+  width:100%;
+}
+.swiper-item{
+  max-height: 100%;
+  max-width: 100%;
+}
+.luo{
+  width: 100%;
+}
+.main_con{
+	width:100%;
+	height:300rpx;
+}
+
+.c_left{
+ width:50%;
+ height: 300rpx;
+ padding: 0 15rpx;
+}
+.c_right{
+  width:50%;
+  height:100%;
+  padding: 0 15rpx;
+}
+
+.c_l{
+  width: 100%;
+  height: 100%;
+}
+.c_r1{
+  width: 100%;
+  height:100%;
+}
+.c_r2{
+  width: 100%;
+  height:100%;
+}
+.right_1{
+  width: 100%;
+  height: 50%;
+}
+.right_2{
+  width: 100%;
+  height: 50%;
+}
+
+footer{
+	width:100%;
+	height:20rem;
+	margin-top:.1rem;
+}
+.foot{
+	width:100%;
+	height:100%;
+}
+.foot_title{
+	width:100%;
+	height:44rpx;
+	line-height:44rpx;
+	margin-bottom:0;
+	background:#fff;
+	font-size:30rpx;
+	color:#666;
+  border-top:2px solid	#E0E0E0;
+  padding:15rpx 20rpx; 
+}
+.foot_content{
+  display: flex;
+  flex-flow: wrap;
+  padding:0 15rpx;
+}
+.foot_con{
+	width: 50%;
+	height:7.5rem;
+	background:#fff;
+	border-bottom: 2px solid #f5f5f5;
+}
+.top{
+	height:2.5rem;
+	font-size:25rpx;
+	padding:15rpx 15rpx;
+}
+.top .t2{
+	color:#ff6000;
+}
+.top .t2 span{
+	font-size: .45rem;
+    color: #999
+}
+.down{
+	width:100%;
+	height:150rpx;
+
+}
+.down image{
+	width: 100%;
+  height:100%;
+}
+.kefu{
+	width:100rpx;
+	height:100rpx;
+	line-height:2.7rem;
+	position:fixed;
+	bottom:3rem;
+	right:.6rem;
+	border-radius:50%;
+}
+.kefu text{
+	font-size:30rpx;
+	color:#fff;
+  line-height: 190rpx;
+}
+.main_game{
+	width:100%;
+	height:19rem;
+}
+ .main_game_title{
+	height:2.5rem;
+	line-height:2.5rem;
+  margin-bottom: 1rem;
+	padding: 0 .4rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_game_title view{
+  /* float: left; */
+	font-size:.6rem;
+	color: #666;
+  width: 20vw;
+  text-align: center;
+}
+.main_game_title .t1,.t2{
+  height: 100%;
+  /* float: left; */
+}
+.t2{
+  margin:15rpx 0 0 0; 
+}
+.main_game_title>view{
+	/* position:relative;
+	top:.1rem; */
+	color:#bbb;
+}
+.t_con{
+	width:40%;
+	height:100%;
+}
+.t_con view{
+	width:15rpx;
+	height:2rpx;
+	margin-top:1.25rem;
+	background:#000;
+}
+.t_con .c2{
+  float: right;
+}
+.game_conb{
+	width:100%;
+	height:15rem;
+	margin:0 .5%;
+	padding-top:.55rem;
+  text-align: center;
+}
+.game_conb .g1{
+	width:90%;
+	height:1.5rem;
+	line-height:1rem;
+	margin:0 5%;
+	text-align: center;
+}
+ .game_conb .g1 view{
+	font-size:.6rem;
+	color:#f22;
+}
+.game_conb .g1 view text{
+	font-size:.8rem;
+}
+.game_conb .g2{
+	margin:.5rem 0;
+	font-size:.6rem;
+}
+.game_conb .g3{
+	position:relative;
+}
+.g_left{
+	width:55%;
+	height:6.6rem;
+	position:relative;
+}
+.g_left image{
+	width:100%;
+	height:6.6rem;
+}
+.g_left .d2{
+	width:100%;
+	height:3rem;
+	line-height:3rem;
+	position:absolute;
+	bottom:0;
+	font-size:.7rem;
+	color:#fff;
+	z-index:4;
+}
+.g_left .d3{
+	width:4rem;
+	height:1.6rem;
+	line-height:1.6rem;
+	position:absolute;
+	bottom:-.8rem;
+	left:3.2rem;
+	background: linear-gradient(-180deg,#ffb262 0,#ff951f 99%);
+	border-radius:1.5rem;
+	font-size:.7rem;
+	color:#fff;
+	z-index:4;
+}
+.g_right{
+	width:55%;
+	height:6.6rem;
+	position:absolute;
+	left:45%;
+	bottom:0;
+}
+.g_right image{
+	width:100%;
+	height:6.6rem;
+}
+.g_right .d2{
+	width:100%;
+	height:3rem;
+	line-height:3rem;
+	position:absolute;
+	bottom:0;
+
+	font-size:.7rem;
+	color:#fff;
+	z-index:4;
+}
+.g_right .d3{
+	width:4rem;
+	height:1.6rem;
+	line-height:1.6rem;
+	position:absolute;
+	bottom:-.8rem;
+	left:3.5rem;
+	background:  linear-gradient(-180deg,#6ea4ff 0,#5693ff 100%);
+	border-radius:1.5rem;
+	font-size:.7rem;
+	color:#fff;
+	z-index:4;
+}
+.g_cen {
+	width:2rem;
+	height:3rem;
+	position:absolute;
+	top:3.6rem;
+	left:10rem;
+	z-index:3;
+}
+.g_cen .c1{
+	width:1rem;
+	height:6rem;
+	position:absolute;
+	top:-3rem;
+	z-index:5;
+}
+.g_cen .c2{
+	width:20rem;
+	height:3rem;
+	line-height:3rem;
+	position:absolute;
+	bottom:0;
+	left:-10rem;
+	background: linear-gradient(-180deg,rgba(0,0,0,0) 0,rgba(0,0,0,0.75) 97%);
+	z-index:5;
+}
+.g_cen .c_pk{
+	width:2rem;
+	height:2rem;
+	background-size:2rem;
+	position:absolute;
+	top:-1.5rem;
+	left:-.4rem;
+	z-index:10;
+}
+.g4{
+	margin-top:2rem;
+	font-size:.6rem;
+	color:#fff;
+}
+.g4 view text{
+	padding:.1rem;
+	background:rgba(0,0,0,0.6);
+}
+
+.main_game_down{
+	width:4rem;
+	height:.5rem;
+	margin:0 auto;
+}
+.main_game_down text{
+	width:.3rem;
+	height:.3rem;
+	margin-left:.3rem;
+	border-radius:.15rem;
+	background:rgba(0,0,0,0.3);
+	display:inline-block;
+}
+.main_game_down .n1{
+	background:rgba(0,0,0,0.9);
+} 

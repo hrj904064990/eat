@@ -1,0 +1,277 @@
+/* pages/account/account.wxss */
+.bdy{
+  background:#eeeeee;
+}
+.bdy>view{
+  background:#ffffff;
+}
+.poa{
+  position:absolute;
+}
+.head{
+  position:relative;
+}
+.head image{
+  width:100%;
+  height:30vh;
+}
+.head_view{
+  top:10%;
+  text-align:center;
+  left:15%;
+}
+.packg{
+  color:#735b27;
+  font-size:30rpx;
+}
+.head_view image{
+  width:20rpx;
+  height:20rpx
+}
+.hv_text{
+  color:#735b27;
+  font-size:30rpx;
+}
+.head_ve{
+  display:flex;
+  flex-flow:column;
+}
+.head_ve text:nth-of-type(1){
+  color:#b45a00;
+  font-size:30rpx;
+  font-weight:700;
+  background: #ffda38;
+  display:inline-block;
+  width:100rpx;
+  left:65%;
+}
+.head_ve text:nth-of-type(2){
+  color:#735b27;
+  font-weight:700;
+  font-size:50rpx;
+  margin-top:40rpx;
+}
+.head_ve text:nth-of-type(3){
+  color:#735b27;
+  font-size:35rpx;
+}
+.special{
+  padding:0 30rpx 30rpx 30rpx;
+  margin-bottom:30rpx;
+}
+.spe_tit,.spe_cont{
+  display: flex;
+}
+.spe_tit{
+  justify-content: center;
+  position:relative;
+}
+.spe_tit text:nth-of-type(1){
+  font-weight:700;
+  font-size:40rpx;
+}
+.spe_tit text:nth-of-type(2){
+  color:#999999;
+  font-size:30rpx;
+  right:0;
+}
+.spe_tit image{
+  width:30rpx;
+  height: 30rpx;
+}
+.spe_tit image :nth-of-type(2){
+  transform: scaleX(-1);
+}
+.spe_cont{
+  flex-flow:column;
+  margin-top:30rpx;
+  text-align: center;
+  border-bottom:2rpx solid #eeeeee;
+  border-left:2rpx solid #eeeeee;
+  border-right:2rpx solid #eeeeee;
+}
+.spe_cont view{
+  display: flex;
+  justify-content: space-between;
+}
+.spe_cont image{
+  width:120rpx;
+  height:120rpx;
+}
+.spe_cont text{
+  color:#999999;
+  font-size:30rpx;
+}
+.free{
+  padding:0 40rpx 30rpx 40rpx;
+  text-align:center;
+  margin-bottom:30rpx;
+}
+.view1{
+  padding-top:25rpx;
+}
+.view1 text{
+  font-weight:700;
+  font-size:30rpx;
+}
+.view2 text:nth-of-type(1){
+  color:#666666;
+  font-size:30rpx;
+}
+.view2 text:nth-of-type(2){
+  color:#b97d2a;
+  font-size:35rpx;
+}
+.view2 text:nth-of-type(3){
+  color:#666666;
+  font-size:30rpx;
+}
+.view3{
+  margin-top:15rpx;
+  display:flex;
+}
+.view3>view{
+  position:relative;
+}
+.view3>view>image{
+  width:320rpx;
+  height:150rpx;
+  margin-right:30rpx;
+}
+.view3_view{
+  top:50rpx;
+}
+.view3_view text{
+  font-weight:700;
+  color:#4a3a16;  
+}
+.view3_view text:nth-of-type(1){
+  font-size:30rpx;
+  left:10rpx;
+  top:0rpx
+}
+.view3_view text:nth-of-type(2){
+  font-size:70rpx;
+  position:absolute;
+  top:-20rpx;
+  left:35rpx;
+}
+.view3_view text:nth-of-type(3){
+  font-size:35rpx;
+  margin-left: 138rpx;
+}
+.view4{
+  margin-top:20rpx;
+  display:flex;
+}
+.view4_view{
+  position:relative;
+}
+.view4_view image{
+  width:210rpx;
+  height:230rpx;
+  margin-right:20rpx;
+}
+.four{
+  top:22rpx;
+  left:44rpx;
+}
+.vf{
+  color:#4a3a16;
+  font-weight:700;
+}
+.vf1t{
+  font-size:30rpx;
+}
+.vf2t{
+  font-size:60rpx;
+}
+.viewt{
+  color:#4a3a16;
+  font-weight:700;
+  font-size:25rpx;
+}
+.vf2{
+  top:145rpx;
+}
+.vf2 text{
+  display:inline-block;
+  width:150rpx;
+  font-size:25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bonus{
+  padding:0 40rpx 30rpx 40rpx;
+  text-align:center;
+  margin-bottom:30rpx;
+}
+.bonus_tit{
+  padding-top:25rpx;
+}
+.bonus_tit text{
+  font-weight:700;
+  font-size:30rpx;
+}
+.bt_cont text{
+  color:#666666;
+  font-size:30rpx;
+}
+.bonus_cont{
+  margin-top:20rpx;
+  display:flex;
+}
+.bc_view{
+  position:relative;
+}
+.bc_view image{
+  width:210rpx;
+  height:230rpx;
+  margin-right:20rpx;
+}
+.b_view{
+  top:22rpx;
+  left:44rpx;
+}
+.bv_view{
+  color:#4a3a16;
+  font-weight:700;
+}
+.bleft{
+  left:225rpx;
+}
+.discoun{
+  padding:0 40rpx 30rpx 40rpx;
+  text-align:center;
+  margin-bottom:75rpx;
+}
+.disim{
+  margin-top:20rpx;
+  margin-bottom:40rpx;
+}
+.disimg{
+  width:83vw;
+  height:15vh;
+}
+.foot{
+  width:100vw;
+  position:fixed;
+  bottom:0;
+}
+.foot image{
+  width:95%;
+  height:100rpx;
+  padding:10rpx 20rpx;
+}
+.foot_view{
+  top:30rpx;
+  left:35%;
+}
+.foot_view text{
+  color:#cab96e;
+  font-size:40rpx;
+}
+.foot_view text:nth-of-type(1){
+  font-weight:700;
+}

@@ -1,0 +1,157 @@
+.body{
+  background:#f5f5f5;
+  height: 100vh;
+}
+/*广告*/
+.advert{
+ height: 250rpx;
+}
+.advert>image{
+  width: 100%;
+  height: 100%;
+}
+/*金币商城*/
+.goldstore{
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  background: #fff;
+  margin: 0 0 15rpx 0;
+}
+.goldstore>view{
+  width: 50%;
+  height: 40vw; 
+  position: relative;
+}
+.goldstore>.goldstore_left>view{
+  padding: 0 3vw 0 3vw;
+  height: 100%;
+}
+.goldstore_left>view>navigator{
+  margin: 5vw 0 0 0px;
+  display: flex;
+  flex-flow: column;
+  
+}
+.goldstore_left>view>navigator>text:nth-of-type(1){
+  font-size: 4vw;
+  color: #ff9900;
+}
+.goldstore_left>view>navigator>text:nth-of-type(2){
+  color: #999999;
+  font-size: 3vw;
+  margin: 0 0 10px;
+}
+.goldstore_left>view>image{
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  right: 20rpx;
+}
+.goldstore_right>view{
+  height: 50%;
+  border-top:1rpx solid #eee;
+  border-left:1rpx solid #eee;
+  border-right:1rpx solid #eee;
+}
+.goldstore_right>view>navigator{
+  display: flex;
+  flex-flow: column;
+  padding: 2vw 3vw 0 3vw;
+}
+.goldstore_right>view:nth-of-type(1)>navigator>text:nth-of-type(1){
+  color: skyblue;
+  font-size: 4vw;
+}
+.goldstore_right>view:nth-of-type(2)>navigator>text:nth-of-type(1){
+  color: red;
+  font-size: 4vw;
+}
+.goldstore_right>view>navigator>text:nth-of-type(2){
+  color: #999999;
+  font-size: 3vw;
+  margin: 0 0 10px;
+}
+.goldstore_right>view{
+  display: flex;
+  align-items: center;
+}
+.goldstore_right>view>image{
+  width: 13.5vw;
+  height: 13.5vw;
+  position: absolute;
+  right: 20rpx;
+}
+/*限时好礼*/
+.goodmanners{
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  flex-flow: column;
+}
+.goodmanners_top{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 6vw;
+  margin: 10rpx 0 10rpx 0;
+}
+.goodmanners_content{
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  color: #999;
+  margin: 0 0 10px;
+}
+.goodmanners_bottom{
+  display: flex;
+  flex-flow: row;
+}
+.goodmanners_bottom>view{
+  width: 33.3%;
+  padding: 2vw 2vw;
+  flex-flow: column;
+  justify-content: center;
+  display: flex;
+}
+.goodmanners_bottom>view>text:nth-of-type(1){
+  width: 19vw;
+  text-align: center;
+  background: #413d3c;
+  color: #fff;
+  font-size: 4vw;
+  margin: 0 0 0 2vw;
+  padding: 0 1vw;
+}
+.goodmanners_bottom>view>view{
+  width:100%; 
+  height: 28vw;
+}
+.goodmanners_bottom>view>view>image{
+  width: 100%;
+  height:100%;
+}
+.goodmanners_bottom>view>navigator{
+    text-align: center;
+    font-size: 3vw;
+    color: #000;
+}
+.goodmanners_bottom>view>view:nth-of-type(2){
+  width: 100%;
+  height: 30rpx;
+  font-size: 3vw;
+  color: red;
+  text-align: center;
+}
+.goodmanners_bottom>view>view:nth-of-type(2)>text:nth-of-type(2){
+  text-decoration:line-through;
+  font-size: 3vw;
+  margin:0 0 0 10rpx;
+  color: rgb(204, 204, 204);
+}
+.goodmanners_more{
+  text-align: center;
+  font-size: 3.5vw;
+  color: #999;
+  margin: 10rpx 0 10rpx 0;
+}

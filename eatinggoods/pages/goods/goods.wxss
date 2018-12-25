@@ -1,0 +1,514 @@
+#bbj{
+  width:100%;
+  height:180rpx;
+}
+#blogo{
+  width:120rpx;
+  height: 120rpx;
+  position: absolute;
+  top:100rpx;
+  left:42%;
+
+}
+#bstorename{
+  margin:0 auto;
+  margin-top: 40rpx;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 55rpx;
+}
+#sele{
+  font-size: 25rpx;
+  text-align: center;
+  color: hsl(39, 93%, 48%);
+  padding: 10rpx;
+}
+.off{
+  text-align: center;
+}
+.offtit{
+    color: #fff;
+    background: rgb(240, 115, 115);
+    transform: scale(0.8);
+    font-size: 25rpx;
+    padding: 0 5px 0 5px;
+    margin: 1vw 0 1vw 0;
+    line-height: 25rpx;
+}
+.offcon{
+    width: 400rpx;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 25rpx;
+    line-height: 23rpx;
+}
+.offmore{
+  position: relative;
+  color: #999;
+  font-size: 25rpx;
+}
+.gong{
+  color: #999;
+  font-size: 25rpx;
+  padding: 10rpx;
+}
+
+/* ===========这里开始是列表了============ */
+.alllist{
+  width:100%;
+  position:sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.navlist{
+  width:33%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+.fenlietitle{
+  width: 90%;
+  margin: 0 auto;
+  border: 1rpx solid #ccc;
+  border-left: none;
+  border-right: none;
+  font-size: 25rpx;
+
+  padding:20rpx 0; 
+}
+.fenlietitle>text{
+  display: inline-block;
+ margin-left: 10rpx;
+}
+/* ================这里已经是内容了============= */
+#mask{
+  width: 100%;
+  height: 5000rpx;
+  background:rgba(0, 0,0, 0.5);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+#showxiang{
+  width: 500rpx;
+  height: 500rpx;
+  background: white;
+  position: fixed;
+  z-index: 15;
+  top:20%;
+  left:11%;
+}
+.allxn{
+  margin-top: 30rpx;
+}
+.xiangnode{
+  font-size: 25rpx;
+}
+.xianggao{
+  padding:20rpx; 
+  margin-top:200rpx; 
+  text-align: center;
+  font-size: 23rpx;
+  background-image: linear-gradient(90deg,#fff,#333 50%,#fff);
+  background-size: 100% 1px;
+  font-weight: 450;
+  height: 20rpx;
+  background-repeat: no-repeat
+}
+.welcome{
+    width: 100%;
+    font-size: 3.5vw;
+    color: #333;
+    max-height: 26vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 6.5vw auto 0;
+}
+
+
+/* ==============这里是一些效果========== */
+#showxiang{
+  padding: 5%;
+  margin:0 auto;
+}
+.xiangtitle{
+    font-size: 25rpx;
+    margin: 0 1.6vw 0 0;
+    border-radius: .266667vw;
+    background-image: linear-gradient(90deg,#fff100,#ffe339);
+    color: #6a3709;
+    padding: 0.8vw 0.8vw;
+    position: relative;
+    top: -1vw;
+}
+.xiangname{
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+.xiangnode{
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.showmask{
+  display: inline-block;
+  width: 15rpx;
+  height: 20rpx;
+  position: relative;
+}
+.showmask>image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+
+/* ==========这里是商家情况=========== */
+.shopcon{
+  padding: 10rpx;
+}
+.shopcon>view{
+  font-size: 30rpx;
+  margin: 10rpx 0;
+}
+#shophead{
+  font-size: 40rpx;
+  font-weight:600;
+}
+#content{
+ height: 1380rpx;
+}
+/* =======这里是第一页呢===== */
+.banner{
+  width: 90%;
+  margin: 0 auto;
+  height: 15%;
+  padding: 5%;
+}
+#all_goods{
+  height: 1000rpx;
+
+}
+.leftlist{
+  width: 20%;
+  height: 920rpx;
+  float: left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.leftlist::-webkit-scrollbar{
+  display: none;
+}
+.leftlist>view{
+  padding:15%;
+  color: #666;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+.rightlist{
+  width: 80%;
+  height: 920rpx;
+  float: left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.rightlist::-webkit-scrollbar{
+  display: none;
+}
+.rightlist>view{
+  width: 100%;
+  padding:3%;
+}
+.goodsimg{
+  width: 40%;
+  height: 220rpx;
+  overflow: hidden;
+  display: inline-block;
+}
+.goodscon{
+  width: 55%;
+  height: 220rpx;
+  overflow: hidden;
+  display: inline-block;
+  padding-left: 10rpx;
+}
+.goods{
+  width: 100%;
+}
+.goodsname{
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.goodsshow{
+  font-size: 23rpx;
+  color: #999;
+  padding: 5rpx 0;
+}
+.goodsoff{
+  font-size: 25rpx;
+  padding: 5rpx 0;
+  color: rgb(240, 115, 115);
+}
+.goodssell{
+  font-size: 30rpx;
+
+}
+.pingfen{
+  padding:20rpx;
+}
+.fenlie{
+  padding: 30rpx;
+}
+.fenlie>view{
+  display: inline-block;
+  padding: 10rpx;
+  margin: 10rpx;
+  font-size: 30rpx;
+}
+.good{
+  background-color: rgb(178, 201, 243);
+}
+
+.bad{
+  background-color: #ccc;
+}
+.pick{
+  background-color: rgb(66, 128, 243);
+}
+.goodssell>.nowones{
+  font-size: 35rpx;
+  color: rgb(240, 115, 115)
+}
+.del{
+  text-decoration: line-through;
+  margin-left:10rpx;
+  font-size: 20rpx;
+}
+/* =================这里是第二页=========== */
+#pg2{
+  width: 900px;
+  overflow-y: scroll;
+}
+#pg2::-webkit-scrollbar{
+  display: none;
+}
+#secondpage{
+  overflow-y: scroll;
+  padding-bottom:200rpx;
+}
+.tou{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+.pingfen{
+  display: inline-block;
+  width: 80%;
+  padding-top:10%; 
+}
+.pingfen>view{
+  width: 60%;
+  float:left;
+}
+.pingfen>.pfdate{
+  display: inline-block;
+  width: 30%;
+  font-size: 30rpx;
+  float: right;
+}
+.shophui{
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ccc;
+  font-size: 35rpx;
+}
+
+.shophui>image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.shophui>view{
+  font-size: 20rpx;
+  color: #444;
+}
+.pingfen2{
+  height: 100rpx;
+  padding-top: 30rpx;
+  padding-left: 40rpx;
+}
+.pingfen2>view{
+  padding: 0 0 0 1%;
+  width: 20%;
+  float: left;
+  font-size: 30rpx;
+  text-align: center;
+}
+.pingfen2>.pfs{
+  width: 30%;
+  font-size: 40rpx;
+  color: rgb(240, 115, 115);
+}
+/* =======这里是第三页===== */
+#threepage{
+  height: 100%;
+  overflow-y: scroll;
+}
+.caozuo{
+  height: 40rpx;
+  width: 20%;
+  position: relative;
+  top: -60rpx;
+  left: 70%;
+  text-align: center;
+}
+.caozuo>text{
+  float: left;
+  font-size: 30rpx;
+  margin-left: 10%;
+}
+.caozuo>image{
+  width: 40rpx;
+  height: 40rpx;
+
+}
+.jian_btn{
+  float: left;
+}
+.jia_btn{
+  float: right
+}
+/* ===============这里是底部================ */
+#footer{
+  width: 100%;
+  max-height: 70%;
+  position: fixed;
+  bottom: -10rpx;
+  background-color: #fff;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+}
+.footer_off{
+  position: relative;
+  top: 0;
+  text-align: center;
+  font-size: 30rpx;
+  background-color: papayawhip;
+}
+#footer_bottom{
+  width: 100%;
+  height: 115rpx;
+  background-color: #333;
+  padding: 0  5%;
+  position:relative;
+  bottom: 0;
+
+}
+#footer_bottom>view{
+  float: left;
+}
+/* 这个购物车图标区域 */
+#shopcart{
+  width: 105rpx;
+  height: 105rpx;
+  position: relative;
+  top: -30rpx;
+  overflow: hidden;
+  background-color: #333;
+  border: 10rpx solid #444;
+  border-radius: 50%;
+  text-align: center;
+
+}
+#shopcart>image{
+  width: 60rpx;
+  height:60rpx;
+  padding-top:22rpx;
+}
+/* 这个有颜色的购物车图标 */
+#shopcart1{
+  width: 105rpx;
+  height: 105rpx;
+  position: relative;
+  top: -30rpx;
+  overflow: hidden;
+  background-color: #3190e8;
+  border: 10rpx solid #444;
+  border-radius: 50%;
+  text-align: center;
+
+}
+#shopcart1>image{
+  width: 60rpx;
+  height:60rpx;
+  padding-top:22rpx;
+}
+
+.jisuan{
+  width: 45%;
+  font-size: 30rpx;
+  color: #999;
+  padding: 2% 0 2% 2%;
+}
+.pay{
+  width: 30%;
+  height: 100%;
+  padding: 0 2%;
+  line-height: 110rpx;
+  text-align: center;
+  color:#fff;
+  font-size: 30rpx;
+
+}
+.pay2{
+  width: 30%;
+  height: 100%;
+  padding: 0 2%;
+  line-height: 110rpx;
+  text-align: center;
+  color:#fff;
+  background-color: #38ca73;
+  font-size: 33rpx;
+}
+/* 购物车的内容 */
+#shopcartcon{
+  width: 90%;
+  max-height: 700rpx;
+  overflow-y: scroll;
+  padding: 0 5%;
+}
+#shopcartcon1{
+  width: 100%;
+  display: none;
+}
+#scc{
+  width: 100%;
+  padding: 5% 0;
+}
+.scc2{
+  float: right;
+  font-size: 30rpx;
+  line-height: 58rpx;
+}
+
+/* 单个商品的详细展示 */
+#onesopen{
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}

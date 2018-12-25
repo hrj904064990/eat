@@ -1,0 +1,55 @@
+<!--pages/order/order.wxml-->
+<view class="wrap">
+  <include src="../common/common_header"></include>
+  <view class="order_content">
+    <view class="order_cotentA">
+        <image class="pi" src="{{businessinfo.blogo}}" />
+        <view class="tai">订单已送达<view></view></view>
+        <text class="thank">感谢你对饿了么的信任，期待你的下次光临</text>
+        <text class="again">再来一单</text>
+    </view>
+    <view class="order_cotentC">
+      <view class="cotentC_t">
+        <image class="poho"src="{{businessinfo.blogo}}"/>
+        <text class="call">联系商家</text>
+        <view class="most2"></view>
+      </view>
+      <view class="list">
+        <view class="listC">{{businessinfo.order.oname}}</view>
+        <view class="youhui" >-¥{{businessinfo.order.omoney}}</view>
+      </view>
+      <view class="list">
+        <view class="listC">餐盒费</view>
+        <view class="youhui">¥{{businessinfo.boxfee}}</view>
+      </view>
+      <view class="list">
+        <view class="listC">在线支付满减优惠</view>
+        <view class="youhui2">-¥{{businessinfo.discount}}</view>
+      </view>
+      <view class="list">
+        <text class="red">红</text>
+        <view class="listC2">店铺红包</view>
+        <view class="youhui2">-¥6</view>
+      </view>
+    </view>
+    <view class="order_cotentE">
+      <view class="news">配送信息</view>
+      <view class="ton">送达时间：尽快送达</view>
+      <view class="ton">{{sendaddress.sendaddress}}</view>
+      <view class="ton">配送方式：蜂鸟专送</view>
+      <view class="qishou">
+        <view class="ton">配送骑手：</view>
+        <image class="phone" src="{{sendaddress.icon}}" />
+        <view class="lianxi">联系骑手</view>
+        <view class="name">{{sendaddress.sendname}}</view >
+      </view>
+    </view>
+    <view class="order_cotentF">
+      <view class="news">订单信息</view>
+      <view class="ton">{{businessinfo.order.osid}}</view>
+      <view class="ton">支付方式：在线支付</view>
+      <view class="ton">{{businessinfo.order.odate}}</view >
+    </view>
+  </view>
+  
+</view>
